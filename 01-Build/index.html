@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,16 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" id="nav-content">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
             </ul>
         </div>
@@ -37,10 +34,14 @@
     <!-- JumboTron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-4">Mel Gaston</h1>
+          <p class="lead">Junior Web Developer.</p>
         </div>
     </div>
+
+    <!-- Portfolio content -->
+    
+    
 
     <!-- FormSpree -->
 
@@ -81,8 +82,8 @@
                <p class="help-block text-danger"></p>
              </div>
            </div>
-           <div class="control-group">
-             <div class="form-group">
+          <div class="control-group">
+            <div class="form-group">
                <textarea
                  class="form-control"
                  rows="7"
@@ -91,14 +92,15 @@
                  required
                  data-validation-required-message="Please leave a message"
                  name="message"
-               ></textarea>
+              >
+              </textarea>
                <p class="help-block text-danger"></p>
-</div>
-           </div>
-           <div class="text-center">
+            </div>
+          </div>
+          <div class="text-center">
              <div id="success"></div>
              <button type="submit" class="btn btn-lg btn-black">
-               <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              <i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i>
                Send Message
              </button>
            </div>

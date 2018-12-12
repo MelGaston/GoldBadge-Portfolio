@@ -1,4 +1,8 @@
 body {
-    background-color:var(--personal);
-    font-family:var(--headerFont);
+    font-family: var(--headerFont);
 }
+
+p {
+    font-family:var(--mainFont);
+}
+
