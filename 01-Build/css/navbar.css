@@ -1,4 +1,34 @@
-#nav-content {
-    margin-left:75%;
+.navbar {
+    padding:0;
 }
 
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+#headerNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343a40;
+    bottom:0;
+    width:100%;
+    max-width: 1080px;
+}
+
+#headerNav li {
+    float: right;
+}
+
+#headerNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#headerNav li a:hover {
+    background-color: #851d50;
+}

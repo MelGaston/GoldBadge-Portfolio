@@ -1,8 +1,77 @@
+/* General Settings */
+
 body {
     font-family: var(--headerFont);
+    margin:0 auto;
 }
 
 p {
     font-family:var(--mainFont);
+    font-size:18px;
+    line-height:1.5em;
 }
 
+section {
+    margin:10vh auto;
+    max-width:1080px;
+    padding:2vh 5vw;
+}
+
+/* End of General Settings */
+
+.divider {
+    width:100%;
+    background-color: #eaebeb;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+    /* Parallax */
+    height:8vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/* FlexBox Settings */
+
+/* Portfolio Section FlexBox */
+
+.portfolio-wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.portfolio-wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.port-1, .port-2, .port-3 {
+    flex: 1 0px;
+}
+
+/* End of Portfolio Section Settings */
+
+/* About Section FlexBox Section */
+
+.about-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.about-wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.about-wrapper .main {
+    flex:4 0px;
+}
+
+.about-wrapper .aside-1 {
+    flex:1 0px;
+}
+
+/* End of About FlexBox Settings */
+
+/* End of FlexBox Settings */

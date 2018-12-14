@@ -1,6 +1,13 @@
 .jumbotron {
     background: url("../assets/img/backgroundImage.jpg") no-repeat center;
-    background-size:cover;
     color:white;
     text-align:center;
+    padding:20vh 0;
+    margin-bottom:0;
+    /* Parallax Effect */
+    height:400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

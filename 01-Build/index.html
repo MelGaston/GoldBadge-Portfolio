@@ -6,55 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <title>Portfolio</title>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" id="nav-content">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- JumboTron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Mel Gaston</h1>
-          <p class="lead">Junior Web Developer.</p>
+          <p class="lead">Software Developer</p>
         </div>
     </div>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul id="headerNav">
+            <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Portfolio content -->
-    
-    
+
+    <section id="portfolio">
+      <h2 class="text-center">Portfolio</h2>
+      <div class = "portfolio-wrapper">
+        <img class="port-1" src="./assets/img/thirstyCreeper.png"/>
+        <img class="port-2" src="./assets/img/thirstyCreeper.png"/>
+        <img class="port-3" src="./assets/img/thirstyCreeper.png"/>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About Content -->
+
+    <section id="about">
+      <h2 class="text-center">About</h2>
+      <div class="about-wrapper">
+        <p class="main">
+          Cupcake ipsum dolor sit amet croissant oat cake chocolate. Jujubes cupcake jelly donut. Halvah cupcake oat cake jelly-o carrot cake sesame snaps I love. Chupa chups gummi bears I love muffin brownie chocolate.
+          <br/><br/>
+          Brownie powder brownie. Carrot cake icing bear claw donut danish carrot cake carrot cake jujubes. I love cookie bear claw. Liquorice soufflé chocolate cake oat cake sugar plum danish sugar plum muffin candy. Cake halvah chupa chups liquorice sesame snaps carrot cake powder chupa chups cake.
+        </p>
+        <img class="aside-1" src="./assets/img/mel.png"/>
+      </div>
+    </section>
+
+    <div class="divider"></div>
 
     <!-- FormSpree -->
 
-    <section id="about"></section>
-   <section id="portfolio"></section>
-   <section id="contact">
+    <section id="contact">
      <div class="container">
-       <h2 class="text-center text-uppercase">Contact Me</h2>
+       <h2 class="text-center">Contact</h2>
        <div class="row">
          <form action="https://formspree.io/mgaston1019@gmail.com" method="POST">
          <div class="control-group">
              <div class="form-group">
-               <label>Name</label>
                <input
                  type="text"
                  class="form-control"
@@ -69,7 +93,6 @@
            </div>
            <div class="control-group">
              <div class="form-group">
-               <label>Email Address</label>
                <input
                  type="email"
                  class="form-control"
@@ -86,29 +109,35 @@
             <div class="form-group">
                <textarea
                  class="form-control"
-                 rows="7"
+                 rows="5"
                  placeholder="Your Message"
                  id="message"
                  required
                  data-validation-required-message="Please leave a message"
                  name="message"
-              >
-              </textarea>
+              ></textarea>
                <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="text-center">
              <div id="success"></div>
-             <button type="submit" class="btn btn-lg btn-black">
-              <i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i>
-               Send Message
+             <button type="submit" class="btn btn-outline-secondary">
+              Send Message
+              <i class="far fa-paper-plane"></i>
              </button>
            </div>
          </form>
        </div>
      </div>
    </section>
-   <footer></footer>
+  <footer>
+    <ul id="footerNav">
+            <li><a href="https://www.linkedin.com/in/melanie-gaston/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/MelGaston" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://twitter.com/No1_LikeGaston" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://www.instagram.com/52shadesofpizza/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
