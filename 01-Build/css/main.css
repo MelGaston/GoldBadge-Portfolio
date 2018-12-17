@@ -6,4 +6,8 @@
 @import "project.css";
 @import "contact.css";
 @import "footer.css";
+@import "../assets/animate.css";
 
+html {
+    scroll-behavior: smooth;
+}

@@ -1,8 +1,15 @@
 /* General Settings */
 
 body {
-    font-family: var(--headerFont);
     margin:0 auto;
+    background-color: #F8F9FA;
+}
+
+section h2 {
+    font-family: var(--headerFont);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:10px;
 }
 
 p {
@@ -14,30 +21,30 @@ p {
 section {
     margin:10vh auto;
     max-width:1080px;
-    padding:2vh 5vw;
+    padding:2vh 2vw;
 }
 
 /* End of General Settings */
 
 .divider {
     width:100%;
-    background-color: #eaebeb;
+    background-color: #F8F9FA;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
     /* Parallax */
-    height:8vh;
+    height:15vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
 }
 
-/* FlexBox Settings */
+/* Portfolio Section */
 
-/* Portfolio Section FlexBox */
-
-.portfolio-wrapper {
+/* .portfolio-wrapper {
     display: flex;  
     flex-flow: row wrap;
     margin: 0 auto;
+    justify-content: space-evenly;
+    align-content: space-between;
 }
 
 .portfolio-wrapper > * {
@@ -46,12 +53,57 @@ section {
 }
 
 .port-1, .port-2, .port-3 {
-    flex: 1 0px;
-}
+    flex: 0 1 auto;
+} */
+
+.imageContainer {
+    position: relative;
+    width: 33%;
+    margin:0 auto;
+    display: inline-block;
+    justify-content: space-evenly;
+    align-content: space-between;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: var(--gray);
+  }
+  
+  .imageContainer:hover .overlay {
+    opacity: 0.9;
+  }
+  
+  .text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--headerFont);
+  }
 
 /* End of Portfolio Section Settings */
 
-/* About Section FlexBox Section */
+/* About Section */
 
 .about-wrapper {
     display: flex;
@@ -65,13 +117,12 @@ section {
 }
 
 .about-wrapper .main {
-    flex:4 0px;
+    flex:1 0px;
+    flex-grow: 2;
 }
 
 .about-wrapper .aside-1 {
     flex:1 0px;
 }
 
-/* End of About FlexBox Settings */
-
-/* End of FlexBox Settings */
+/* End of About Settings */
